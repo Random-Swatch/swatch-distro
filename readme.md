@@ -19,10 +19,12 @@
 * Navigate to the root of the `swatch-ui` module and run following commands,
   * `npm install`
   * `npm start`
+* Press `ctrl + c` to terminate.
 
 ### 2. Using Docker
 
-* Run `./run.sh` script.
+* Run `./run.sh` script to start.
+* Run `./stop.sh` script to stop.
 
 ## How to use
 
