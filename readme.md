@@ -34,13 +34,12 @@
 
 ### `swatch-server` update
 * Define the space type of the new color space in `com.kanopi.swatch.ColorSpaceType` enum class.
-* Color spaces should implement the `com.kanopi.swatch.Color` interface.
 * Create a new class for the new color space and implement the `com.kanopi.swatch.Color` interface.
   * `ColorSpaceType getType();` ~ This method returns the color space type.
   * `Color random();` ~ This method should generate a random color from the space.
   * `String getSyntax();` ~ This method should return the syntax to use the color in Web UI.
   * `boolean getIsCssCompatible();` ~ This method should return the CSS compatibility status of the color space. Ex: If the color space is compatible with the latest CSS version this value should be `true` else, should be `false`.
-  * For sample implementation check the `com.kanopi.swatch.RgbSpace` class.
+  * For a sample implementation check the `com.kanopi.swatch.RgbSpace` class.
 * Create a new Object of the class and add to the `colorSpaces` list which is defined in the `com.kanopi.swatch.SwatchGenerator` class. 
 * Default color spaces has been added inside the constructor of the `com.kanopi.swatch.SwatchGenerator` class. Add a new line at the same place to add the new Color space to the list.
 
