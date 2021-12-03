@@ -6,6 +6,7 @@
 * JDK 11
 * Maven 3.8.4
 * NodeJs 16.13.1
+* Docker 19.03.8 `(Optional)`
 
 ## How to run
 
