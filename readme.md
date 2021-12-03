@@ -13,8 +13,8 @@
 ### 1. Using binary 
 
 * Clone `swatch-server` and `swatch-ui` modules using following commands,
-  * `git clone git@github.com:Random-Swatch/swatch-server.git`
-  * `git clone git@github.com:Random-Swatch/swatch-ui.git`
+  * `git clone https://github.com/Random-Swatch/swatch-server.git`
+  * `git clone https://github.com/Random-Swatch/swatch-ui.git`
 * Navigate to the root of the `swatch-server` module and run the following command,
   * `mvn spring-boot:run`
 * Navigate to the root of the `swatch-ui` module and run following commands,
@@ -26,6 +26,18 @@
 
 * Run `./run.sh` script to start.
 * Run `./stop.sh` script to stop.
+
+#### Limitation:
+Experienced a `port already in use` error while re-running the same application. The root cause was `docker-proxy` holds the port even after stopping the container.
+
+If you get `port already in use` error while re-running the application use following commands to find PIDs of relevant processes,
+
+* `sudo ss -lptn 'sport = :3000'`
+* `sudo ss -lptn 'sport = :8080'`
+
+And use following command to kill processes,
+
+* `sudo kill -9 <Pid>`
 
 ## How to use
 

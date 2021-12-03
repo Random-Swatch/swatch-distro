@@ -7,3 +7,5 @@ echo -e "\nStopping swatch server"
 echo "==========================="
 docker container stop `cat server.pid`
 docker container rm `cat server.pid`
+
+rm *.pid

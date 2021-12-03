@@ -8,11 +8,11 @@ fi
 
 echo "Downloading swatch server"
 echo "========================="
-git clone git@github.com:Random-Swatch/swatch-server.git
+git clone https://github.com/Random-Swatch/swatch-server.git
 
 echo -e "\nDownloading swatch UI"
 echo "========================="
-git clone git@github.com:Random-Swatch/swatch-ui.git
+git clone https://github.com/Random-Swatch/swatch-ui.git
 
 cd swatch-server
 
