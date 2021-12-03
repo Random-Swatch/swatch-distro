@@ -32,6 +32,43 @@
 
 ![image info](./resources/screen-1.png)
 
+## Swatch API
+
+* Method: `GET`
+* URL: `http://localhost:8080/swatch`
+* Response data:
+```json
+[
+
+  {
+    "type":"HSL",
+    "syntax":"hsl(164, 75%, 93%)",
+    "isCssCompatible":true
+  },
+  {
+    "type":"HSL",
+    "syntax":"hsl(29, 88%, 33%)",
+    "isCssCompatible":true
+  },
+  {
+    "type":"HSL",
+    "syntax":"hsl(121, 72%, 69%)",
+    "isCssCompatible":true
+  },
+  {
+    "type":"RGB",
+    "syntax":"rgb(161, 25, 95)",
+    "isCssCompatible":true
+  },
+  {
+    "type":"RGB",
+    "syntax":"rgb(65, 116, 179)",
+    "isCssCompatible":true
+  }
+
+]
+```
+
 ## How to add a new color space
 
 ### `swatch-server` update
